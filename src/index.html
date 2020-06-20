@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleble=0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Store</title>
@@ -52,18 +53,21 @@
       <div class="container">
         <div class="header__main_block">
           <div class="header__main_text">
-            <h3>Зимняя распродажа</h3>
+            <h2>Зимняя распродажа</h2>
             <h1>скидки до 90%</h1>
             <button>смотреть модели</button>
         </div>
       <!-- /.header__main_text -->
       <div class="header__main_img">
-        <span>
-          <del>9 900<i class="fas fa-ruble-sign"></i></del>
-        </span>
-        <span>1 900<i class="fas fa-ruble-sign"></i>
-        </span>
-        <img src="img/running_shoes_PNG5823.png" alt="skeakers">
+        <div class="header__main_cost">
+          <span>
+            <del>9 900 <i class="fas fa-ruble-sign"></i></del>
+          </span>
+          <span>1 900 <i class="fas fa-ruble-sign"></i>
+          </span>
+        </div>
+        <!-- /.header__main_cost -->
+        <!-- <img src="img/running_shoes_PNG.png" alt="skeakers"> -->
       </div>
     </div>
     <!-- /.header__main_block -->
@@ -76,24 +80,263 @@
 
 <!-- гавное содержимое -->
 <main class="main">
-  <div class="container">
-    <section class="section"></section>
-    <!-- /.section -->
-    <section class="section"></section>
-    <!-- /.section -->
-    <section class="section"></section>
-    <!-- /.section -->
-    <section class="section"></section>
-    <!-- /.section -->
- </div>
- <!-- /.container -->
+  <section class="free-shiping">
+    <p><b>бесплатная доставка</b> от 3000 ₽</p>
+    <p>Сделайте заказ и получите подарок!</p>
+  </section>
+  <!-- /.free-shiping -->
+  <section class="collection">
+     <div class="collection__men col">
+        <p><b>мужская</b> коллекция</p>
+        <p>Обувь, полуверы, костюмы</p>
+        <button>&rarr;</button>
+     </div>
+     <!-- /.collection__men -->
+    <div class="collection__women col">
+      
+        <p><b>женская</b> коллекция</p>
+        <p>Обувь, полуверы, костюмы</p>
+        <button>&rarr;</button>
+      </div>
+      <!-- /.container -->
+  </div>
+  <!-- /.collection__women -->
+  </section>
+  <!-- /.collection -->
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__menu">
+          <div class="catalog__menu_item">
+            <img src="img/dude.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/t-shirt.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/naa.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/wess.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/fee.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/laa.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/koo.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+          <div class="catalog__menu_item">
+            <img src="img/gaa.png" alt="">
+          </div>
+          <!-- /.catalog__item -->
+        </div>
+        <!-- /.catalog__menu -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.catalog -->
+    <section class="model">
+      <div class="container">
+        <h3>Новые модели</h3>
+      <div class="model__menu">
+        <div class="model__menu_item">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <img src="img/woman2.png" alt="">
+            <p>Коктейльное<br>
+              платье</p>
+              <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное<br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное <br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное<br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+      </div>
+      <!-- model__menu -->
+      <div class="model__btn">
+      <button>
+        все модели &rarr;
+      </button>
+    </div>
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /.model -->
+    <section class="sale">
+      <div class="container">
+       <div class="sale__text">
+          <h3>получите скидки и подарки</h3>
+          <input type="text" placeholder="Ваш e-mail">
+          <button>подписатся</button>
+       </div>
+       <!-- /.sale__text -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.sale -->
+    <section class="model">
+      <div class="container">
+        <h3>скидки до 90%</h3>
+      <div class="model__menu">
+        <div class="model__menu_item">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <img src="img/woman2.png" alt="">
+            <p>Коктейльное<br>
+              платье</p>
+              <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное<br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное <br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+        <div class="model__menu_item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="img/woman2.png" alt="">
+          <p>Коктейльное<br>
+            платье</p>
+            <p><i class="fas fa-ruble-sign"></i> 40 000</p>
+        </div>
+        <!-- /.model__menu_item -->
+      </div>
+      <!-- model__menu -->
+      <div class="model__btn">
+      <button>
+        все модели &rarr;
+      </button>
+    </div>
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /.model -->
 </main>
 <!-- /.main -->
 
 <!-- подвал -->
 <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__top_block">
+      <div class="footer__top_logo">
+        <img src="img/logo2.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.</p>
+      </div>
+      <div class="footer__block_1">
+        <p>Основные ссылки</p>
+        <ul>
+          <li>О компании</li>
+          <li>Каталог</li>
+          <li>Доставка</li>
+          <li>Оплата</li>
+        </ul>
+      </div>
+      <!-- /.footer__block_1 -->
+      <div class="footer__block_2">
+        <p>Категории</p>
+        <ul>
+          <li>Мужская одежда</li>
+          <li>Женская одежда</li>
+          <li>Детская одежда</li>
+          <li>Для животных</li>
+        </ul>
+      </div>
+      <!-- /.footer__block_2 -->
+      <div class="footer__block_3">
+        <p>полезные ссылки</p>
+        <ul>
+          <li>Таблица размеров</li>
+          <li>Блог о моде</li>
+          <li>Наша миссия</li>
+        </ul>
+      </div>
+      <!-- /.footer__block_3 -->
+      <div class="footer__block_4">
+        <p>соц сети</p>
+        <ul>
+          <li><i class="fab fa-vk"></i> VK.com</li>
+          <li><i class="fab fa-facebook-square"></i> Facebook</li>
+          <li><i class="fab fa-instagram"></i> Instagram</li>
+        </ul>
+      </div>
+      <!-- /.footer__block_4 -->
+    </div>
+    <!-- /.footer__top_block -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- footer__top -->
   <div class="container">
-
+    <div class="footer__bottom">
+      <p>Copyright © 2019. Все права защищены</p>
+      <p>Сверстал Баймен Ержан</p>
+      <p>Политика приватности</p>
+    </div>
+    <!-- /.footer__bottom -->
   </div>
   <!-- /.container -->
 </footer>
@@ -102,6 +345,7 @@
 <!-- подключение скриптов -->
 <script src="js/script.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.min.js"></script>
 </body>
 </html>

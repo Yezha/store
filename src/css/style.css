@@ -6,6 +6,10 @@ img { max-width: 100%; display: block; }
 
 .container { max-width: 1162px; margin: auto; padding: 0 10px; }
 
+h3 { text-align: center; text-transform: uppercase; }
+
+button { font-family: 'Montserrat Thin'; text-transform: uppercase; background-color: #D7B399; border: none; color: #fff; font-size: 26px; }
+
 @media (max-width: 830px) { .container { width: 50%; } }
 
 @font-face { font-family: 'Montserrat Thin'; src: url("../fonts/Montserrat-Thin.eot"); src: url("../fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat-Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -135,15 +139,121 @@ template { display: none; }
 
 .header__nav_box form:nth-child(3) { margin: 0; }
 
-.header__nav_box select { border: none; outline: none; font-weight: 500; padding: 5px; }
+.header__nav_box select { border: none; outline: none; font-weight: 500; padding: 5px; background-color: #F9F6F1; }
+
+.header { background-color: #F9F6F1; padding-bottom: 207px; }
 
 .header__main_block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
-.header__main_block h3 { font-family: 'Montserrat Medium'; font-weight: normal; font-size: 30px; }
+.header__main_block h2 { font-family: 'Montserrat Medium'; font-weight: normal; font-size: 30px; text-align: left; }
 
 .header__main_block h1 { text-transform: uppercase; font-family: 'Montserrat Bold'; font-size: 55px; }
 
-.header__main_block button { border: none; background-color: #D7B399; color: #fff; padding: 20px 55px; }
+.header__main_block button { border: none; background-color: #D7B399; color: #fff; padding: 15px 33px; font-size: 26px; font-family: 'Montserrat Thin'; }
 
-.header__main_img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.header__main_img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 53%; height: 362px; background: url(../img/running_shoes_PNG.png) no-repeat center 2px; }
+
+.header__main_cost { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: right; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; min-height: 136px; }
+
+.header__main_cost span:nth-child(2) { font-family: 'Montserrat Bold'; font-size: 42px; color: #D84033; }
+
+.header__main_cost span:nth-child(1) { font-size: 24px; margin-bottom: 14px; }
+
+.free-shiping { text-align: center; background-color: #212121; color: #fff; padding: 50px; }
+
+.free-shiping p:nth-child(1) { text-transform: uppercase; font-size: 30px; font-family: 'Montserrat Medium'; }
+
+.free-shiping p { font-size: 21px; font-family: 'Montserrat Thin'; }
+
+.collection { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 1162px; margin: auto; }
+
+.collection__men { background: #F9F6F1 url(../img/man.png) no-repeat right bottom; }
+
+.collection__women { background: #F4F4F4 url(../img/woman.png) no-repeat right bottom; }
+
+.col { font-family: Montserrat Medium; padding-top: 85px; min-height: 250px; width: 100%; }
+
+.col button { background-color: #D7B399; color: #fff; border: none; padding: 5px 35px; }
+
+.col p:nth-child(1) { text-transform: uppercase; font-size: 24px; }
+
+.col p:nth-child(2) { font-family: Montserrat Medium; font-size: 16px; }
+
+.catalog__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 150px; }
+
+.catalog__menu_item img { width: 277px; height: 236px; }
+
+.model__menu_item { max-width: 255px; min-height: 350px; margin: 20px; padding: 20px; position: relative; }
+
+.model__menu_item span { position: absolute; }
+
+.model__menu_item span::before, .model__menu_item span::after { content: ''; background-color: #D7B399; position: absolute; }
+
+.model__menu_item span:nth-of-type(1) { top: 0; left: 0; }
+
+.model__menu_item span:nth-of-type(1)::before { height: 1px; width: 30px; }
+
+.model__menu_item span:nth-of-type(1)::after { height: 30px; width: 1px; }
+
+.model__menu_item span:nth-of-type(2) { top: 0; right: 0; }
+
+.model__menu_item span:nth-of-type(2)::before { height: 1px; width: 30px; right: 0; }
+
+.model__menu_item span:nth-of-type(2)::after { height: 30px; width: 1px; }
+
+.model__menu_item span:nth-of-type(3) { bottom: 0; right: 0; }
+
+.model__menu_item span:nth-of-type(3)::before { height: 1px; width: 30px; right: 0; }
+
+.model__menu_item span:nth-of-type(3)::after { height: 30px; width: 1px; bottom: 0; }
+
+.model__menu_item span:nth-of-type(4) { bottom: 0; left: 0; }
+
+.model__menu_item span:nth-of-type(4)::before { height: 1px; width: 30px; left: 0; }
+
+.model__menu_item span:nth-of-type(4)::after { height: 30px; width: 1px; bottom: 0; }
+
+.model { margin-bottom: 150px; }
+
+.model__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin-bottom: 100px; }
+
+h3 { font-family: 'Montserrat Bold'; font-size: 36px; margin-bottom: 100px; }
+
+.model__menu_item p { text-align: center; font-family: 'Montserrat Bold'; }
+
+.model__menu_item p:nth-of-type(1) { font-size: 14px; }
+
+.model__menu_item p:nth-of-type(2) { font-size: 18px; color: #D7B399; }
+
+.model__btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.model__btn button { font-family: 'Montserrat Thin'; padding: 15px 30px; font-size: 23px; }
+
+.sale { background-color: #212121; color: #fff; padding: 30px; margin-bottom: 150px; }
+
+.sale__text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 50px; }
+
+.sale__text h3 { font-size: 30px; margin: 0; }
+
+.sale__text input { padding: 12px 54px 12px 16px; font-size: 13px; }
+
+.sale__text button { font-family: 'Montserrat Thin'; padding: 10px 30px; font-size: 20px; }
+
+.footer__top { background-color: #212121; font-family: 'Montserrat Semibold'; color: #fff; padding: 50px; }
+
+.footer__top ul { list-style: none; padding: 0; font-size: 12px; font-family: 'Montserrat Thin'; }
+
+.footer__top li { line-height: 34px; color: #CBCFD4; }
+
+.footer__top li i { color: #D7B399; font-size: 15px; margin-right: 8px; }
+
+.footer__top p { font-size: 12px; }
+
+.footer__top_logo { width: 20%; }
+
+.footer__top_logo p { font-family: 'Montserrat Thin'; line-height: 22px; }
+
+.footer__top_block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.footer__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #212121; }
 /*# sourceMappingURL=style.css.map */

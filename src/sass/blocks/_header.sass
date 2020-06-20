@@ -1,13 +1,16 @@
 .header
+  background-color: $cream
+  padding-bottom: 207px
   &__main
     &_block
       display: flex
       justify-content: space-between
       flex-direction: row
-      h3
+      h2
         font-family: 'Montserrat Medium'
         font-weight: normal
         font-size: 30px
+        text-align: left
       h1
         text-transform: uppercase
         font-family: 'Montserrat Bold'
@@ -16,7 +19,27 @@
         border: none
         background-color: $orange
         color: #fff
-        padding: 20px 55px
+        padding: 15px 33px
+        font-size: 26px
+        font-family: 'Montserrat Thin'
     &_img
       display: flex
       flex-direction: column
+      width: 53%
+      height: 362px
+      background: url(../img/running_shoes_PNG.png) no-repeat center 2px
+    &_cost
+      display: flex
+      flex-direction: column
+      text-align: right
+      justify-content: flex-end
+      min-height: 136px
+      span
+        &:nth-child(2)
+          font-family: 'Montserrat Bold'
+          font-size: 42px
+          color: #D84033
+        &:nth-child(1)
+          font-size: 24px
+          margin-bottom: 14px
+    

@@ -165,11 +165,13 @@ template { display: none; }
 
 .free-shiping p { font-size: 21px; font-family: 'Montserrat Thin'; }
 
-.collection { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 1162px; margin: auto; }
+.collection { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: auto; }
 
-.collection__men { background: #F9F6F1 url(../img/man.png) no-repeat right bottom; }
+.collection__men { width: 50%; background: #F9F6F1 url(../img/man.png) no-repeat right bottom; }
 
-.collection__women { background: #F4F4F4 url(../img/woman.png) no-repeat right bottom; }
+.collection__women { background: #F4F4F4 url(../img/woman.png) no-repeat 370px bottom; }
+
+.collection__block { max-width: 500px; margin: auto; }
 
 .col { font-family: Montserrat Medium; padding-top: 85px; min-height: 250px; width: 100%; }
 
